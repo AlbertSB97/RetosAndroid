@@ -18,6 +18,7 @@ import com.google.android.gms.maps.model.PolylineOptions
 
 class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLocationButtonClickListener, GoogleMap.OnMyLocationClickListener, GoogleMap.OnMapClickListener {
     private lateinit var map: GoogleMap
+    private var locations = mutableListOf<LatLng>()
 
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
@@ -71,6 +72,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLocat
 
     override fun onMapClick(p0: LatLng) {
         map.addMarker(MarkerOptions().position(p0))
+        locations.add(p0)
+        createCustomPolylines()
     }
 
     private fun createMapFragment() {
@@ -130,6 +133,18 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLocat
             .color(ContextCompat.getColor(this, R.color.kotlin))
 
         val polyline = map.addPolyline(polylineOptions)
+    }
+
+    private fun createCustomPolylines(){
+        if(locations.size > 1){
+            val polylineOptions = PolylineOptions()
+            for (location in locations){
+                polylineOptions.add(location)
+            }
+            polylineOptions.width(30f).color(ContextCompat.getColor(this, R.color.kotlin))
+
+            val customPolyline = map.addPolyline(polylineOptions)
+        }
     }
 
 }
