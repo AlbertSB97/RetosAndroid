@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1087497519325",
+    "project_id": "reto-cloud-messaging",
+    "storage_bucket": "reto-cloud-messaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087497519325:android:31f7e3d080b44e08435b34",
+        "android_client_info": {
+          "package_name": "com.example.cloudmessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087497519325-ijnri1vmo91cbh2s4org2jcpmg2rh70h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cloudmessaging",
+            "certificate_hash": "6cfe26aff1cfd8fda8642d19bbd21d41414f1f07"
+          }
+        },
+        {
+          "client_id": "1087497519325-a75nmcsegv0re6qnbf4ufnc75utdvurc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhvA3GX5DJyC9V8JM_ep70sBmx8DpBcdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087497519325-a75nmcsegv0re6qnbf4ufnc75utdvurc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

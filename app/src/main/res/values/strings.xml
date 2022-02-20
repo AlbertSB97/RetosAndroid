@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retos</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAN8owKejs4w9TCrkRKhRL3NkvS0552U78</string>
+</resources>
